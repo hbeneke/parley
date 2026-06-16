@@ -1,7 +1,7 @@
 {
-  "name": "@habakukbeneke/site-footer",
+  "name": "@habakukbeneke/parley",
   "version": "0.1.0",
-  "description": "Reusable site footer as a native Web Component.",
+  "description": "A crew of reusable native Web Components.",
   "author": {
     "name": "Enrique Quero Vilar",
     "nickname": "Habakuk Beneke",
@@ -9,20 +9,20 @@
   },
   "license": "GPL-3.0-only",
   "type": "module",
-  "main": "./dist/site-footer.js",
-  "module": "./dist/site-footer.js",
-  "types": "./dist/site-footer.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/site-footer.d.ts",
-      "import": "./dist/site-footer.js"
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
     }
   },
   "files": ["dist"],
   "keywords": [
-    "web-component",
-    "custom-element",
-    "footer",
+    "web-components",
+    "custom-elements",
+    "component-library",
     "typescript"
   ],
   "scripts": {
