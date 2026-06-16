@@ -1,0 +1,38 @@
+{
+  "name": "@habakukbeneke/site-footer",
+  "version": "0.1.0",
+  "description": "Reusable site footer as a native Web Component.",
+  "author": {
+    "name": "Enrique Quero Vilar",
+    "nickname": "Habakuk Beneke",
+    "e-mail": "habakukBeneke [at] proton [dot] me"
+  },
+  "license": "GPL-3.0-only",
+  "type": "module",
+  "main": "./dist/site-footer.js",
+  "module": "./dist/site-footer.js",
+  "types": "./dist/site-footer.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/site-footer.d.ts",
+      "import": "./dist/site-footer.js"
+    }
+  },
+  "files": ["dist"],
+  "keywords": [
+    "web-component",
+    "custom-element",
+    "footer",
+    "typescript"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
