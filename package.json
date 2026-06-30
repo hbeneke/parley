@@ -1,6 +1,6 @@
 {
   "name": "@hbeneke/parley",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A crew of reusable native Web Components.",
   "author": {
     "name": "Enrique Quero Vilar",
@@ -26,7 +26,9 @@
       "import": "./dist/index.js"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "web-components",
     "custom-elements",
