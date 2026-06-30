@@ -32,6 +32,8 @@ template.innerHTML = `
     .box p { margin: 0; }
     .box p + p { margin-top: 0.5rem; }
     a { color: inherit; text-underline-offset: 2px; }
+    #name-link { color: var(--link, inherit); }
+    #name-link:hover { color: var(--link-hover, var(--link)); }
     .heart { color: var(--accent, crimson); }
 
     .tagline { transition: opacity 0.3s; }
