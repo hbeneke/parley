@@ -4,3 +4,9 @@ dist/
 .DS_Store
 .env
 .env.*
+
+# Editor / tooling
+.claude/
+.vscode/
+.idea/
+Thumbs.db

@@ -1,0 +1,19 @@
+# parley
+
+> A small crew of native Web Components. No framework, no runtime, no build step on the consumer side — custom elements that work wherever HTML does. Published as `@hbeneke/parley` on npm.
+
+## Usage
+
+```js
+import "@hbeneke/parley";
+```
+
+Then drop the tags into your markup.
+
+## Components
+
+- [site-footer](docs/site-footer.md): Configurable site footer with a name link, copyright-line presets, an optional custom copyright template, slotted content, a reveal-on-hover tagline, and CSS custom properties for theming.
+
+## Reference
+
+- [custom-elements.json](custom-elements.json): Custom Elements Manifest — machine-readable metadata (attributes, slots, CSS custom properties) for every component.

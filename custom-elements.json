@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "src/footer/site-footer.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "A configurable site footer with a name link, a copyright line and a\nreveal-on-hover tagline.",
+          "name": "SiteFooter",
+          "cssProperties": [
+            {
+              "description": "Footer font family.",
+              "name": "--font",
+              "default": "inherit"
+            },
+            {
+              "description": "Name link color.",
+              "name": "--link",
+              "default": "inherit"
+            },
+            {
+              "description": "Name link hover color.",
+              "name": "--link-hover",
+              "default": "var(--link)"
+            },
+            {
+              "description": "Heart / accent color in the default tagline.",
+              "name": "--accent",
+              "default": "crimson"
+            }
+          ],
+          "slots": [
+            {
+              "description": "Default slot for extra footer content.",
+              "name": ""
+            },
+            {
+              "description": "Overrides the default \"Made with ❤️ from Spain.\" tagline.",
+              "name": "tagline"
+            }
+          ],
+          "members": [
+            {
+              "kind": "method",
+              "name": "render",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "copyrightText",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "string"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "nickname",
+                  "type": {
+                    "text": "string"
+                  }
+                },
+                {
+                  "name": "year",
+                  "type": {
+                    "text": "string"
+                  }
+                }
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "nickname",
+              "type": {
+                "text": "string"
+              },
+              "description": "Name shown in the link and copyright line. Defaults to `Anonymous`."
+            },
+            {
+              "name": "year",
+              "type": {
+                "text": "string"
+              },
+              "description": "Copyright year. Defaults to the current year."
+            },
+            {
+              "name": "copyright",
+              "type": {
+                "text": "\"bugs\"|\"reserved\"|\"copyright\"|\"simple\""
+              },
+              "description": "Copyright preset. Defaults to `bugs`."
+            },
+            {
+              "name": "copyright-text",
+              "type": {
+                "text": "string"
+              },
+              "description": "Custom copyright template. Overrides `copyright`. Supports `{year}` and `{nickname}` placeholders."
+            },
+            {
+              "type": {
+                "text": "\"always\""
+              },
+              "description": "When `always`, the tagline is always visible instead of only on hover.",
+              "name": "reveal"
+            }
+          ],
+          "superclass": {
+            "name": "HTMLElement"
+          },
+          "tagName": "site-footer",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "SiteFooter",
+          "declaration": {
+            "name": "SiteFooter",
+            "module": "src/footer/site-footer.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "site-footer",
+          "declaration": {
+            "name": "SiteFooter",
+            "module": "src/footer/site-footer.ts"
+          }
+        }
+      ]
+    }
+  ]
+}

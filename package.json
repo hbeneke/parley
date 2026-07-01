@@ -5,7 +5,7 @@
   "author": {
     "name": "Enrique Quero Vilar",
     "nickname": "Habakuk Beneke",
-    "e-mail": "habakukBeneke [at] proton [dot] me"
+    "e-mail": "hbeneke [at] proton [dot] me"
   },
   "license": "GPL-3.0-only",
   "repository": {
@@ -27,7 +27,10 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "custom-elements.json",
+    "llms.txt",
+    "docs"
   ],
   "keywords": [
     "web-components",
@@ -38,12 +41,15 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsc -w",
-    "prepublishOnly": "npm run build"
+    "analyze": "cem analyze",
+    "prepublishOnly": "npm run analyze && npm run build"
   },
   "publishConfig": {
     "access": "public"
   },
   "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.11.0",
     "typescript": "^5.8.3"
-  }
+  },
+  "customElements": "custom-elements.json"
 }

@@ -55,6 +55,26 @@ template.innerHTML = `
   </footer>
 `;
 
+/**
+ * A configurable site footer with a name link, a copyright line and a
+ * reveal-on-hover tagline.
+ *
+ * @element site-footer
+ *
+ * @attr {string} nickname - Name shown in the link and copyright line. Defaults to `Anonymous`.
+ * @attr {string} year - Copyright year. Defaults to the current year.
+ * @attr {"bugs"|"reserved"|"copyright"|"simple"} copyright - Copyright preset. Defaults to `bugs`.
+ * @attr {string} copyright-text - Custom copyright template. Overrides `copyright`. Supports `{year}` and `{nickname}` placeholders.
+ * @attr {"always"} reveal - When `always`, the tagline is always visible instead of only on hover.
+ *
+ * @slot - Default slot for extra footer content.
+ * @slot tagline - Overrides the default "Made with ❤️ from Spain." tagline.
+ *
+ * @cssprop [--font=inherit] - Footer font family.
+ * @cssprop [--link=inherit] - Name link color.
+ * @cssprop [--link-hover=var(--link)] - Name link hover color.
+ * @cssprop [--accent=crimson] - Heart / accent color in the default tagline.
+ */
 export class SiteFooter extends HTMLElement {
   static observedAttributes = [
     "nickname",
