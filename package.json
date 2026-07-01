@@ -42,7 +42,10 @@
     "build": "tsc",
     "dev": "tsc -w",
     "analyze": "cem analyze",
-    "prepublishOnly": "npm run analyze && npm run build"
+    "prepublishOnly": "npm run analyze && npm run build",
+    "release:patch": "npm version patch -m \"chore(release): %s\" && git push --follow-tags && npm publish",
+    "release:minor": "npm version minor -m \"chore(release): %s\" && git push --follow-tags && npm publish",
+    "release:major": "npm version major -m \"chore(release): %s\" && git push --follow-tags && npm publish"
   },
   "publishConfig": {
     "access": "public"
