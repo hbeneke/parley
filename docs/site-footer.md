@@ -51,5 +51,5 @@ A configurable site footer with a name link, a copyright line and a reveal-on-ho
 
 ## Notes
 
-- The name link points to `/about` and carries an `aria-label` of `Learn more about {nickname}`.
+- The name link points to `https://www.hbeneke.dev` and carries an `aria-label` of `Learn more about {nickname}`.
 - On devices with hover, the tagline is hidden until the footer box is hovered. Set `reveal="always"` to keep it visible. `reveal` is read on render only; it is not currently in `observedAttributes`, so changing it at runtime after connection does not re-render.
